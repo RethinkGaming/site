@@ -48,6 +48,15 @@ img {
     border-bottom: 1px solid rgb(200,200,200);
 }
 
+.content {
+    h1 { font-size: ($h1-font-size - $h1-font-reduction)*0.8; }
+    h2 { font-size: ($h2-font-size - $h2-font-reduction)*0.8; }
+    h3 { font-size: ($h3-font-size - $h3-font-reduction)*0.8; }
+    h4 { font-size: ($h4-font-size - $h4-font-reduction)*0.8; }
+    h5 { font-size: ($h5-font-size - $h5-font-reduction)*0.8; }
+    h6 { font-size: ($h6-font-size - $h6-font-reduction)*0.8; }
+}
+
 .date {
     padding-top:5px;
     font-style: italic;

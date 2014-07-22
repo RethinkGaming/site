@@ -24,7 +24,7 @@
             <h1>John Yang is Awesome</h1>
           </div>
           <div  class="medium-3 large-uncentered medium-centered columns">
-            <img id="title-img" class="circle" src="layout_img/john.jpg"/>
+            <img id="title-img" class="circle" src="/layout_img/john.jpg"/>
           </div>
         </div>
       </div>
@@ -38,15 +38,14 @@
         <div class="story">
           <h1>{{title}}</h1>
           <div class="rating">
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star"></i>
-            <i class="fa fa-star-half-full"></i>
+            {{{star_html}}}
             <div id="summary">
-              Blah blah blah summary here.
+              {{overview}}
             </div>
           </div>
-          {{{yield}}}
+          <div class="content">
+            {{{yield}}}
+          </div>
         </div>
         <div class="date">June 19, 2014</div>
       </div>

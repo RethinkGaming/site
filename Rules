@@ -18,6 +18,15 @@ require 'compass'
 
 Compass.add_project_configuration 'compass.rb'
 
+preprocess do
+  items.each do |item|
+    if item[:rating] then
+      item[:star_html] = make_stars item[:rating]
+    end
+  end
+end
+
+
 compile '/assets/humans/' do
 end
 
@@ -33,13 +42,10 @@ end
 compile '/assets/img/*' do
 end
 
-compile '*' do
-  if item[:extension] == 'css'
-    # don’t filter stylesheets
-  elsif item.binary?
-    # don’t filter binary items
+compile '/articles/*' do
+  if item.binary?
   else
-   filter :mustache
+    filter :kramdown
     layout 'article'
   end
 end
