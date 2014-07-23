@@ -3,17 +3,23 @@
 
 
 #title {
-    margin-top: 50px;
+
     margin-bottom: 50px;
     border-bottom: 1px solid rgb(233,233,233);
     h1 {
+        #R {
+            font-size: 100pt;
+        }
         text-align: center;
-        font-size: 56pt;
+        font-size: 20pt;
     }
 }
 
 #title-img {
-    height: 158px;
+    height: 50px;
+    position: relative;
+    top: -56px;
+    left: 78px;
 }
 
 #title-small {
