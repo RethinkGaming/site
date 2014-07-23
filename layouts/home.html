@@ -1,0 +1,12 @@
+{{> top}}
+
+<h1>What kind of games do you like?</h1>
+<div id="chooser">
+  <ul class="button-group">
+    {{#all_tags}}
+    <li><a href="{{path}}" class="button">{{name}}</a></li>
+    {{/all_tags}}
+  </ul>
+</div>
+
+{{> bottom}}

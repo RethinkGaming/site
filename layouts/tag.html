@@ -1,0 +1,10 @@
+{{> top}}
+
+<h1>{{tag}}</h1>
+<ul>
+  {{#items_with_tag}}
+  <li><a href="{{path}}">{{title}}</a></li>
+  {{/items_with_tag}}
+</ul>
+
+{{> bottom}}

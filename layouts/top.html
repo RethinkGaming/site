@@ -1,0 +1,44 @@
+
+<!DOCTYPE HTML>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>John Yang - </title>
+
+    <link href='http://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="<%= @items['/stylesheet/'].path %>"> -->
+    <link rel="stylesheet" href="/css/app.css" />
+    <link rel="author" href="humans.txt" />
+    <script src="/js/modernizr.js"></script>
+
+    <!-- you don't need to keep this, but it's cool for stats! -->
+    <meta name="generator" content="nanoc <%= Nanoc::VERSION %>">
+  </head>
+  <body>
+    <div class="row">
+      <a href="/">
+        <div id="title" class="medium-12 columns hide-for-small-only">
+          <div class="row">
+            <div class="medium-12 large-9 columns">
+              <h1>John Yang is Awesome</h1>
+            </div>
+            <div  class="medium-3 large-uncentered medium-centered columns">
+              <img id="title-img" class="circle" src="/layout_img/john.jpg"/>
+            </div>
+          </div>
+        </div>
+        <div id="title-small" class="small-12 columns show-for-small-only">
+          <h1>John Yang is Awesome</h1>
+        </div>
+      </a>
+    </div>
+
+    <div class="row">
+      <div id="side" class="large-3 columns show-for-large-only">
+        {{> navbar}}
+      </div>
+
+      <div class="large-9 columns">

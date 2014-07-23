@@ -1,4 +1,4 @@
-module StarHelper
+module ViewHelper
   def make_stars(num)
     sh = ""
     for i in 1..num

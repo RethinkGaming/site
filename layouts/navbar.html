@@ -1,0 +1,14 @@
+<ul class="side-nav">
+  {{#all_pages}}
+  <li><a href="{{path}}">{{title}}</a></li>
+  {{/all_pages}}
+  <li><a href="#">Twitch</a></li>
+</ul>
+{{^tag}}
+<h4>Categories</h4>
+<ul class="side-nav">
+  {{#all_tags}}
+  <li><a href="{{path}}">{{name}}</a></li>
+  {{/all_tags}}
+</ul>
+{{/tag}}

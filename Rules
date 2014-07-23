@@ -19,7 +19,29 @@ require 'compass'
 Compass.add_project_configuration 'compass.rb'
 
 preprocess do
+  # Item for each tag, to generate tag pages
+  all_tags.each do |tag|
+    items << Nanoc::Item.new(
+      "",
+      { :tag => tag, :items_with_tag => items_with_tag(tag)},
+      "/categories/#{tag}")
+  end
+  # Item for homepage
+  items << Nanoc::Item.new("", {:tag => 1}, "/")
+  
+  # have to do this stuff in preprocessing because items are frozen during compilation
+
+  
+  all_pages = items.select { |i| i.identifier.start_with? '/pages' }
+  # Shouldn't have to do this, but it crashes otherwise...
+  all_pages = all_pages.map { |p| { :title => p[:title], :path => p.identifier } }
   items.each do |item|
+    item[:all_pages] = all_pages
+
+    item[:all_tags] = all_tags.map do |tag| 
+      { :name => tag, :path => "/categories/#{tag}" }
+    end
+
     if item[:rating] then
       item[:star_html] = make_stars item[:rating]
     end
@@ -50,6 +72,22 @@ compile '/articles/*' do
   end
 end
 
+compile '/categories/*' do
+  layout 'tag'
+end
+
+compile '/pages/*' do
+  if item.binary?
+  else
+    filter :kramdown
+    layout 'page'
+  end
+end
+
+compile '/' do
+  layout 'home'
+end
+
 route '/assets/humans/' do
   '/humans.txt' 
 end
@@ -74,7 +112,7 @@ route '/assets/bower/*' do
   '/bower_components' + item.identifier.chop + '.' + item[:extension]
 end
 
-route '*' do
+route '/articles/*' do
   if item.binary?
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
@@ -84,5 +122,16 @@ route '*' do
   end
 end
 
+route '/categories/*' do
+  item.identifier + 'index.html'
+end
 
-layout '*', :mustache
+route '/pages/*' do
+  item.identifier + 'index.html'
+end
+
+route '/' do
+  '/index.html'
+end
+
+layout '*', :my_mustache

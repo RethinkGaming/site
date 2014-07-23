@@ -1,7 +1,8 @@
 ---
 title: "Faster than Light"
-rating: 2.5
+rating: 3.5
 overview: "Put a summary here."
+tags: ['RTS']
 created_at: "6/19/2014"
 ---
 

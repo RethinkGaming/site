@@ -1,1 +1,2 @@
-include StarHelper
+include ViewHelper
+include TagsHelper
