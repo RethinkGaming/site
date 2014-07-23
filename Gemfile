@@ -1,0 +1,5 @@
+source 'https://rubygems.org' 
+gem 'nanoc'
+gem 'compass'
+gem 'kramdown'
+gem 'mustache'
