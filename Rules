@@ -45,6 +45,12 @@ preprocess do
     if item[:rating] then
       item[:star_html] = make_stars item[:rating]
     end
+
+    if item[:created_on] 
+      item[:created_on] = Date.strptime(item[:created_on], "%m/%d/%Y").strftime("%B %d, %Y")
+    end
+
+
   end
 end
 
