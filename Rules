@@ -69,6 +69,8 @@ compile '/assets/js/*' do
 end
 compile '/assets/img/*' do
 end
+compile '/assets/fonts/*' do
+end
 
 compile '/articles/*' do
   if item.binary?
@@ -112,6 +114,10 @@ end
 
 route '/assets/js/*' do
   '/js/' + File.basename(item.identifier) + '.js'
+end
+
+route '/assets/fonts/*' do
+  '/fonts/' + File.basename(item.identifier) + '.' + item[:extension] 
 end
 
 route '/assets/bower/*' do

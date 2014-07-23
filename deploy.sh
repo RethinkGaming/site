@@ -1,5 +1,5 @@
 git pull origin master
-nanoc 
+bundle exec nanoc 
 if [ "$?" -ne 0 ]; then
     echo "Website build failed"
     exit 1

@@ -1,13 +1,7 @@
 {{> top}}
 
 <div class="story">
-  <h1>{{title}}</h1>
-  <div class="rating">
-    {{{star_html}}}
-    <div id="summary">
-      {{overview}}
-    </div>
-  </div>
+  <h1>{{title}} <span class="stars">{{{star_html}}}</span></h1>
   <div class="content">
     {{{yield}}}
   </div>
