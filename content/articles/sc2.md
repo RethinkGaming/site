@@ -29,7 +29,7 @@ This is how to do a link to your site: [About](/about).
 
 An image:
 
-![This text shows if the image doesn't load](sc2_img.png)
+![](sc2_img.png)
 
 The image is in the same directory as this file.
 
