@@ -29,7 +29,7 @@ This is how to do a link to your site: [About](/about).
 
 An image:
 
-!(sc2_img.png)
+![This text shows if the image doesn't load](sc2_img.png)
 
 The image is in the same directory as this file.
 
@@ -43,5 +43,5 @@ The image is in the same directory as this file.
 
 Math (not sure if you'll need this, but it's cool)
 
-$$ \sum_{x=1}^n (1/x)^2 $$
+$$ \sum_{x=1}^n \frac{1}{x}^2 $$
 

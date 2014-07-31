@@ -6,5 +6,5 @@ if [ "$?" -ne 0 ]; then
 fi
 git add -A && git commit -m "." && git push
 cd output
-git add -A && git commit -m "." && git push
+git add -A && git commit -m "." && git push --force
 cd ..
