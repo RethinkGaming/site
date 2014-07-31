@@ -3,6 +3,6 @@ class ImageLinkFilter < Nanoc::Filter
   type :text
 
   def run(content, params = {})
-    content.gsub(/\<img src="(.*?)"\ alt="(.*?)">/, '<img src="\1" alt="\2">')
+    content.gsub(/\<img src="(.*?)"\ alt="(.*?)">/, '<img src="../\1" alt="\2">')
   end
 end
