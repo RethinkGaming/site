@@ -76,6 +76,7 @@ compile '/articles/*' do
   if item.binary?
   else
     filter :kramdown
+    filter :image_links
     layout 'article'
   end
 end
@@ -88,6 +89,7 @@ compile '/pages/*' do
   if item.binary?
   else
     filter :kramdown
+    filter :image_links
     layout 'page'
   end
 end
