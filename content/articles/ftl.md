@@ -1,9 +1,8 @@
 ---
 title: "Faster than Light"
 rating: 3.5
-overview: "Morbi eu fringilla mi. Vestibulum faucibus dui felis, sed auctor dui convallis sit amet. Proin cursus rhoncus ipsum et rhoncus. Fusce rutrum, ligula eget tincidunt semper, dui leo accumsan neque, non feugiat mauris lectus luctus arcu. Etiam interdum massa mi, vel commodo felis vestibulum ut." 
-tags: ['RTS']
-created_on: "6/1/2014"
+tags: ['RTS', 'Indie']
+created_on: "6/1/2f014"
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin blandit auctor neque, et ultrices lacus pellentesque a. Sed vel enim molestie, facilisis urna non, aliquet augue. Fusce augue enim, lacinia et lacus quis, ornare suscipit ipsum. In tristique ullamcorper pretium. Ut facilisis aliquet tortor ac varius. Sed pretium ornare consequat. Phasellus condimentum enim dignissim, hendrerit libero vitae, semper mauris. Sed ultrices vitae massa a tristique. Curabitur dictum urna vel mi pulvinar eleifend. Integer vulputate porta ullamcorper. Proin convallis eros sit amet mi vehicula commodo. Duis vitae pulvinar nisl. Praesent vulputate odio nisl, ullamcorper fringilla mi commodo rutrum. Cras lacinia, dolor sit amet consequat luctus, elit tellus vulputate ipsum, sit amet aliquet tortor lorem in dui. Suspendisse aliquam sodales risus a consectetur.
