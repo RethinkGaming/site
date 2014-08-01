@@ -1,11 +1,8 @@
 ---
 title: Starcraft II
-tags: 
-  - RTS
-  - Awesome
+tags: ['RTS', 'Awesome']
 created_on: 6/14/2014
 rating: 4
-published: true
 ---
 
 # This is a heading
