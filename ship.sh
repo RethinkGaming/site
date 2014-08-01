@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Stop if any step fails
+set -e
+
 CMESSAGE=$(git log --pretty=%B -1)
 
 rm -rf output
