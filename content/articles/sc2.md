@@ -1,8 +1,11 @@
 ---
-title: "Starcraft II"
-tags: ['RTS', 'Awesome']
-created_on: '6/14/2014'
+title: Starcraft II
+tags: 
+  - RTS
+  - Awesome
+created_on: 6/14/2014
 rating: 4
+published: true
 ---
 
 # This is a heading
@@ -44,4 +47,3 @@ The image is in the same directory as this file.
 Math (not sure if you'll need this, but it's cool)
 
 $$ \sum_{x=1}^n \frac{1}{x}^2 $$
-
