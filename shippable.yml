@@ -1,0 +1,6 @@
+build_environment: Ubuntu 12.04
+language: ruby
+rvm: 1.9.3
+gemfile: Gemfile
+script:
+  - ./ship.sh
