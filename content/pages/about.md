@@ -2,5 +2,5 @@
 title: 'About'
 ---
 
-Put some stuff here. Blah blah blah.
+Put some stuff here. Stuff.
 
