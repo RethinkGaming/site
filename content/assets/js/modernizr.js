@@ -1,1 +1,1 @@
-/u/r/e/rex/Code/ruby/john/bower_components/modernizr/modernizr.js
+../../../bower_components/modernizr/modernizr.js
