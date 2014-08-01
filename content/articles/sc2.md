@@ -25,7 +25,7 @@ This is how to do **bold** and _italic_.
 
 This is how to do a link: [Click here for google](www.google.com).
 
-This is how to do a link to your site: [About](/about).
+This is how to do a link to your site: [About](/pages/about).
 
 An image:
 
