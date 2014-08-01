@@ -1,6 +1,9 @@
 build_environment: Ubuntu 12.04
 language: ruby
 rvm: 1.9.3
+env:
+  global:
+    - secure: dUcR1v7HK+5raz0nwsBUBtFcDGiiUu7croGlue3BK6V8Oa29zYuDZqbKAa29bS7BGt/4jj9zx04qLCsBXU5If9AKtrVgwI9JNmuTI9jBMSietCvBkpBFb53d/7WOyMlbZDuyjZHuUVpE/Ha5ztPKMLJRi11xIpTr9+jk9DHqQr1v64btnJlQ/VzDSPw61cVqhZ30dp85KvOoEmheBHxV3SLKFApWOyL6Yg2dzhP4A9pFXeDlRfdrylp8z7FjGVGaiqDNvECqGn2sxzmTdaDkrhXQQ2HowkMyDcXDdptJqcF1d2ViRtksKhrFnHISy1hvpdGgQgrt75FwloRR3031LQ==
 gemfile: Gemfile
 script:
   - ./ship.sh
