@@ -81,6 +81,15 @@ compile '/articles/*' do
   end
 end
 
+compile '/blog/*' do
+  if item.binary?
+  else
+    filter :kramdown
+    filter :image_links
+    layout 'article'
+  end
+end
+
 compile '/categories/*' do
   layout 'tag'
 end
@@ -127,6 +136,16 @@ route '/assets/bower/*' do
 end
 
 route '/articles/*' do
+  if item.binary?
+    # Write item with identifier /foo/ to /foo.ext
+    item.identifier.chop + '.' + item[:extension]
+  else
+    # Write item with identifier /foo/ to /foo/index.html
+    item.identifier + 'index.html'
+  end
+end
+
+route '/blog/*' do
   if item.binary?
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
