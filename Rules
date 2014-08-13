@@ -28,6 +28,8 @@ preprocess do
   end
   # Item for homepage
   items << Nanoc::Item.new("", {:tag => 1}, "/")
+  # Item for blog homepage
+  items << Nanoc::Item.new("", {:tag => 1}, "/blog/")
   
   # have to do this stuff in preprocessing because items are frozen during compilation
 
