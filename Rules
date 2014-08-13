@@ -26,11 +26,6 @@ preprocess do
       { :tag => tag, :items_with_tag => items_with_tag(tag)},
       "/categories/#{tag}")
   end
-  # Item for homepage
-  items << Nanoc::Item.new("", {:tag => 1}, "/")
-  # Item for blog homepage
-  items << Nanoc::Item.new("", {:tag => 1}, "/blog/")
-  
   # have to do this stuff in preprocessing because items are frozen during compilation
 
   
@@ -39,6 +34,12 @@ preprocess do
   # Shouldn't have to do this, but it crashes otherwise...
   all_pages = all_pages.map { |p| { :title => p[:title], :path => p.identifier } }
   all_posts = all_posts.map { |p| { :title => p[:title], :path => p.identifier } }
+
+  # Item for blog homepage
+  items << Nanoc::Item.new("", {:tag => 1}, "/blog/")
+  # Item for homepage
+  items << Nanoc::Item.new("", {:tag => 1}, "/")
+
   items.each do |item|
     item[:all_pages] = all_pages
     item[:all_posts] = all_posts
