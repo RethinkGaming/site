@@ -86,6 +86,10 @@ compile '/articles/*' do
   end
 end
 
+compile '/blog/' do
+  layout 'blog_home'
+end
+
 compile '/blog/*' do
   if item.binary?
   else
@@ -112,9 +116,6 @@ compile '/' do
   layout 'home'
 end
 
-compile '/blog/' do
-  layout 'blog_home'
-end
 
 route '/assets/humans/' do
   '/humans.txt' 
