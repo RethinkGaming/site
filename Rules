@@ -33,10 +33,13 @@ preprocess do
 
   
   all_pages = items.select { |i| i.identifier.start_with? '/pages' }
+  all_posts = items.select { |i| i.identifier.start_with? '/blog' }
   # Shouldn't have to do this, but it crashes otherwise...
   all_pages = all_pages.map { |p| { :title => p[:title], :path => p.identifier } }
+  all_posts = all_posts.map { |p| { :title => p[:title], :path => p.identifier } }
   items.each do |item|
     item[:all_pages] = all_pages
+    item[:all_posts] = all_posts
 
     item[:all_tags] = all_tags.map do |tag| 
       { :name => tag, :path => "/categories/#{tag}" }
@@ -107,6 +110,10 @@ compile '/' do
   layout 'home'
 end
 
+compile '/blog/' do
+  layout 'blog_home'
+end
+
 route '/assets/humans/' do
   '/humans.txt' 
 end
@@ -153,6 +160,10 @@ route '/blog/*' do
     # Write item with identifier /foo/ to /foo/index.html
     item.identifier + 'index.html'
   end
+end
+
+route '/blog/' do
+  '/blog/index.html'
 end
 
 route '/categories/*' do
