@@ -1,5 +1,5 @@
 ---
-title: Starcraft II: Zerg Units
+title: "Starcraft II: Zerg Units"
 tags: ['howto', 'RTS']
 created_on: 8/24/2014
 ---
